@@ -1,21 +1,12 @@
-\<\!--  
-  Product 1 Spec Template  
-  Paste this into any document you can save (Google Docs, Word, Notes, a text  
-  editor). On Wednesday it becomes the README.md of your Product 1 repository.  
-  Walkthrough, examples, and AI prompts are in the guide:  
-  https\://github.com/464squad/IEL/blob/main/projects/product-1/product-spec-guide.md  
-  Delete these instructions and the italic hints as you fill each section in.  
-\--\>
 
-\# \[Product Name\]
+\# \[StarPoint\]
 
-\> One line: what this is and who it's for (hint: it's for you).
 
-\*\*Author:\*\* Eivind Cuate-Orea · \*\*Course:\*\* CMP 464/343 Product 1 · \*\*Last updated:\*\* 9/30/26
+\*\*Author:\*\* Eivind Cuate-Orea · \*\*Course:\*\* CMP 464/343 Product 1 · \*\*Last updated:\*\* 10/4/26
 
 \---
 
-\#\# 1\. About Me (the User)
+\#\# 1\. About Me 
 
 \*Who am I in the context of this problem? What roles am I playing (student, employee, parent, athlete, gamer…)?\*
 
@@ -61,7 +52,6 @@ A Student
 
 \*\*I'll know this is solved when:\*\* I can start my day knowing what student task I need to do and when I need to do it, stay on track, and spend less time figuring out where to start.
 
-\*Check: none of these words appear: app, website, platform, dashboard, tool, AI, track, automate, notify, feature.\*
 
 \---
 
@@ -108,7 +98,7 @@ I don't want managing the planner to become another task that consumes the time 
 \#\#\# Front end  
 \- \*\*Surface:\*\* Website  
 \- \*\*Tools:\*\* Next.js, HTML, CSS, JavaScript,  
-\- \*\*Why:\*\* \*I usually experience this problem on my PC and iPhone, so a website lets me access my planner from either device. I already know HTML, CSS, and JavaScript, while Next.js gives me an opportunity to learn a new web framework.
+\- \*\*Why:\*\* \*I usually experience this problem on my PC and iPhone, so a website lets me access my planner from either device. I already know HTML, CSS, while Next.js gives me an opportunity to learn a new web framework & JavaScript give me the opportunity to learn how to make my website move.
 
 \#\#\# Back end  
 | Piece | Choice | Why |  

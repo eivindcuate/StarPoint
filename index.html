@@ -83,9 +83,35 @@
 
                 </div>
 
+            </section>
 
+            <section id="tasks">
+
+                <h2>My Tasks</h2>
+
+                <form>
+                        
+                            <label for="task-name">Task Name:</label>
+                            <input type="text" id="task-name" name="task-name" required>
+
+                            <label for="course">Course:</label>
+                            <input type="text" id="course" name="course">
+
+                            <label for="due-date">Due Date:</label>
+                            <input type="date" id="due-date" name="due-date">
+
+                            <label for="priority">Priority:</label>
+                            <select id="priority" name="priority">
+                                <option value="low">Low</option>
+                                <option value="medium" selected>Medium</option>
+                                <option value="high">High</option>
+                            </select>
+
+                            <button type="submit">Add Task</button>
+                </form>
 
             </section>
+
 
          </main>
     </div>

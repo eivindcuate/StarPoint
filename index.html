@@ -90,24 +90,31 @@
                 <h2>My Tasks</h2>
 
                 <form>
-                        
-                            <label for="task-name">Task Name:</label>
-                            <input type="text" id="task-name" name="task-name" required>
+                        <div class="mb-3">
+                            <label for="task-name" class="form-label">Task Name:</label>
+                            <input type="text" id="task-name" name="task-name" class="form-control" required>
+                        </div>
 
-                            <label for="course">Course:</label>
-                            <input type="text" id="course" name="course">
+                        <div class="mb-3">
+                            <label for="course" class="form-label">Course:</label>
+                            <input type="text" id="course" name="course" class="form-control">
+                        </div>
 
-                            <label for="due-date">Due Date:</label>
-                            <input type="date" id="due-date" name="due-date">
+                        <div class="mb-3">
+                            <label for="due-date" class="form-label">Due Date:</label>
+                            <input type="date" id="due-date" name="due-date" class="form-control">
+                        </div>
 
-                            <label for="priority">Priority:</label>
-                            <select id="priority" name="priority">
+                        <div class="mb-3">
+                            <label for="priority" class="form-label">Priority:</label>
+                            <select id="priority" name="priority" class="form-select">
                                 <option value="low">Low</option>
                                 <option value="medium" selected>Medium</option>
                                 <option value="high">High</option>
                             </select>
+                        </div>
 
-                            <button type="submit">Add Task</button>
+                            <button type="submit" class="btn btn-primary">Add Task</button>
                 </form>
 
             </section>

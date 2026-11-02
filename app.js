@@ -3,6 +3,8 @@
 // Get Data from our Form 
 const taskForm = document.getElementById("task-form");
 const todoTasks = document.getElementById("todo-tasks");
+const inProgressTasks = document.getElementById("in-progress-tasks");
+const completedTasks = document.getElementById("completed-tasks");
 
 taskForm.addEventListener("submit", function(event) {
 event.preventDefault();
@@ -11,6 +13,7 @@ const course = document.getElementById("course").value;
 const dueDate = document.getElementById("due-date").value;
 const priority = document.getElementById("priority").value;
 
+
 const task = {
     name: taskName,
     course: course,
@@ -18,6 +21,7 @@ const task = {
     priority: priority,
     status: "todo"
 };
+
 
 const taskCard = document.createElement("div");
 taskCard.className = "card mb-3";
@@ -53,9 +57,42 @@ if (task.priority === "low") {
 } else {
     priorityBadge.className = "badge text-bg-danger";
 }
+
+const moveButton = document.createElement("button");
+moveButton.className = "btn btn-outline-primary btn-sm";
+moveButton.textContent = "Move to In Progress";
+moveButton.type = "button";
+
+
+moveButton.addEventListener("click", function() {
+
+    if (task.status === "todo") {
+
+       
+            task.status = "in-progress";
+            inProgressTasks.appendChild(taskCard);
+            moveButton.textContent = "Move to Completed";
+
+    }
+
+    else if (task.status === "in-progress") {
+        task.status = "completed";
+        completedTasks.appendChild(taskCard);
+        moveButton.textContent = "Completed";
+        moveButton.disabled = true;
+
+}
+
+});
+
+
 priorityBadge.textContent = task.priority;
 cardBody.appendChild(priorityBadge);
+cardBody.appendChild(moveButton);
 todoTasks.appendChild(taskCard);
+
+
+
 
 
 });

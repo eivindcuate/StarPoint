@@ -141,3 +141,11 @@ Reminders: Should reminders initially appear inside the dashboard, or should I e
 
 Deployment: Which hosting option best fits the current implementation and any available student benefits?
 
+## Demo
+
+### StarPoint Application Walkthrough
+
+Watch the video demonstration of StarPoint, showcasing task creation, priority levels, and task management.
+
+[▶ Watch StarPoint Demo](https://youtu.be/SLsAvpM6Xgk)
+
